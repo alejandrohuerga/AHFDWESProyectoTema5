@@ -1,0 +1,113 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 17 nov. 2025, 11:57:30
+    Author     : alejandro.huefer
+*/
+
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 31 oct 2025, 9:30:30
+    Author     : Alejandro De la Huerga
+*/
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    
+}
+body{
+    
+    background: grey;
+}
+
+header,footer{
+    
+    background: lightpink;
+}
+
+
+main{
+    width: 100%;
+    height: 78vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+  position: relative;        
+  display: flex;             
+  align-items: center;       
+  justify-content: center;   
+  height: 120px;             
+}
+
+
+
+header h1 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 2.0rem;
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+}
+
+table{
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+#scripts th {
+    background-color: pink;
+    color: black;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap; 
+}
+
+#scripts td{
+    background-color: lightgrey;
+    text-align: center;
+    
+}
+
+#ejercicios th {
+    background-color: pink;
+    color: black;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap; 
+}
+
+#ejercicios td{
+    background-color: lightgrey;
+    
+}
+
+footer {
+  height: 90px;
+  background: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+
