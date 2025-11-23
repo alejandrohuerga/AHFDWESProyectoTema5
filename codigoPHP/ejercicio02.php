@@ -77,30 +77,26 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
                 <?php
                 /**
                  * @author: Alejandro De la Huerga
-                 * @since 18/11/2025
+                 * @since 23/11/2025
                  * 
                  * Ejercicio 2: Desarrollo de un control de acceso con identificación del usuario basado 
                  * en la función header() y en el uso de una tabla “Usuario” de la base de datos. (PDO).
                  */
-                //si no se han enviado las credenciales hay que pedir autenticación
                 
+                //si no se han enviado las credenciales hay que pedir autenticación
                 $usuarioPasswd=$_SERVER['PHP_AUTH_PW'];
                
-               if(!isset($_SERVER['PHP_AUTH_USER'])) {
+                //Importacion del fichero de configuracion
+                require_once '../config/confDBPDODesarrollo.php';
+                if(!isset($_SERVER['PHP_AUTH_USER'])) {
                     header('WWW-Authenticate: Basic Realm="Contenido restringido"');
                     header('HTTP/1.0 401 Unauthorized');
                     echo "Usuario no reconocido!";
                     exit; //el programa acaba aqui
                 }
-                 // Atributos para el establecimiento de conexión con la base de datos.
-                // Utilizamos la variable super global $_SERVER para obtener la ip.
-
-                $dsn = 'mysql:host=' . $_SERVER['SERVER_ADDR'] . ';dbname=DBAHFDWESProyectoTema5';  // Nombre de la base de datos
-                $username = 'userAHFDWESProyectoTema5'; // Nombre de usuario de la base de datos
-                $password = 'paso'; // password de la base de datos.
                 
                 try {
-                    $miDB = new PDO($dsn, $username, $password);
+                    $miDB = new PDO(DNS, USUARIODB, PSWD);
                     $miDB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                     $sql = "SELECT T01_CodUsuario,T01_Password,T01_DescUsuario  FROM T_01Usuario 
                       WHERE T01_CodUsuario= :usuario AND T01_Password = sha2(:passwd,256)";

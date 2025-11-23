@@ -29,7 +29,7 @@
                 <td class="texto">Creación de la base de Datos y del usuario. </td>
                 <td class="iconos"> <a href="mostrarCodigo/muestraCreaDBAHFDWESProyectoTema5.php"><img src="doc/images/eye.png" class="logo" alt=""/></a></td>
                 <td class="iconos" rowspan="2" > <a href="https://github.com/alejandrohuerga/AHFDAWProyectoDAW/blob/master/EntornoDeExplotacion.md">Instalación </a> <br>
-                    <a href="mostrarCodigo/muestraDBAHFDWESProyectoTema5.php"><img src="doc/images/eye.png" class="logo" alt=""/> </a>  </td>
+                    <a href="mostrarCodigo/muestraCreaDBAHFDWESProyectoTema5.php"><img src="doc/images/eye.png" class="logo" alt=""/> </a>  </td>
                 <td class="texto">Librería Validación . </td>
                 <td class="iconos" colspan="2"> <a href="mostrarCodigo/muestraLibreriaValidacion.php"><img src="doc/images/eye.png" class="logo" alt=""/> </a>  </td>
 <!--                        <td class="iconos"> <a href="mostrarcodigo/muestraMiLibreriaStatic.php"><i class="fa-solid fa-eye"></i> </a>  </td>-->
@@ -40,16 +40,14 @@
                 <td class="texto">Carga de la base de Datos. </td>
                 <td class="iconos"> <a href="mostrarCodigo/muestraCargaInicialDBAHFDWESProyectoTema5.php"><img src="doc/images/eye.png" class="logo" alt=""/></a>  </td>
 <!--                         <td class="iconos"> <a href="mostrarcodigo/muestraDBVGDWESProyectoTema5.php"><i class="fa-solid fa-eye"></i> </a>  </td>-->
-                <td class="texto">Fichero de configuración PDO. </td>
-                <td class="iconos"> <a href="mostrarCodigo/muestraconfDBPDODes.php"><img src="doc/images/eye.png" class="logo" alt=""/> </a></td>
-                <td class="iconos"> <a href="mostrarCodigo/muestraconfDBPDO.php"><img src="doc/images/eye.png" class="logo" alt=""/> </a></td>
+                <td class="texto" rowspan="2">Fichero de configuración PDO. </td>
+                <td class="iconos" rowspan="2"> <a href="mostrarCodigo/muestraConfPDODesarrollo.php"><img src="doc/images/eye.png" class="logo" alt=""/> </a></td>
+                <td class="iconos" rowspan="2"> <a href="mostrarCodigo/muestraConfPDOExplotación.php"><img src="doc/images/eye.png" class="logo" alt=""/> </a></td>
             </tr>
             <tr>
                 <td class="texto">Borrado de la base de Datos. </td>
                 <td class="iconos"> <a href="mostrarCodigo/muestraBorraDBAHFDWESProyectoTema5.php"><img src="doc/images/eye.png" class="logo" alt=""/> </a>  </td>
                 <td class="iconos"> <a href=""><img src="doc/images/eye.png" class="logo" alt=""/> </a>  </td>
-                <td class="texto">Librería personal. </td>
-                <td class="iconos" colspan="2"> <a href="mostrarCodigo/muestraLibreriaValidacion.php"><img src="doc/images/eye.png" class="logo" alt=""/> </a>  </td>
             </tr>
         </table>
             <!--
