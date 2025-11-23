@@ -87,7 +87,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
                 $usuarioPasswd=$_SERVER['PHP_AUTH_PW'];
                
                 //Importacion del fichero de configuracion
-                require_once '../config/confDBPDODesarrollo.php';
+                require_once '../config/confDBPDOExplotacion.php';
                 if(!isset($_SERVER['PHP_AUTH_USER'])) {
                     header('WWW-Authenticate: Basic Realm="Contenido restringido"');
                     header('HTTP/1.0 401 Unauthorized');
