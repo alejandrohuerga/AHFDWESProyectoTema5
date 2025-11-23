@@ -14,9 +14,9 @@ USE DBAHFDWESProyectoTema5;
 
 
 CREATE TABLE IF NOT EXISTS T_01Usuario (
-    T01_CodUsuario VARCHAR(8) PRIMARY KEY,
+    T01_CodUsuario VARCHAR(15) PRIMARY KEY,
     -- CodUsuario:8 letras maximo y 4 ninimo PK
-    T01_Password VARCHAR(255) NOT NULL ,
+    T01_Password VARCHAR(256) NOT NULL ,
     -- Password:8 letras maximo y 4 ninimo. Obligatorio
     T01_DescUsuario VARCHAR(255),
     --Alfanuemrico hasta 255 caracteres.Nombre y Apeliido del usuario. Obligatorio

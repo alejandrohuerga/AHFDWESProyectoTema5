@@ -13,8 +13,46 @@
             <h1><a href="../index.html">Alejandro De la Huerga </a></h1>
         </div> 
     </header>
-    <main>  
+    <main>
+        <h3>CONTENIDO FICHEROS EXTERNOS</h3>
         <table id="scripts">
+            <tr>
+                <th>Descripción</th>
+                <th>Desarrollo</th>
+                <th>Explotación</th>
+
+                <th>Descriptción</th>
+                <th>Desarrollo</th>
+                <th>Explotación</th>
+            </tr>
+            <tr>
+                <td class="texto">Creación de la base de Datos y del usuario. </td>
+                <td class="iconos"> <a href="mostrarCodigo/muestraCreaDBAHFDWESProyectoTema5.php"><img src="doc/images/eye.png" class="logo" alt=""/></a></td>
+                <td class="iconos" rowspan="2" > <a href="https://github.com/alejandrohuerga/AHFDAWProyectoDAW/blob/master/EntornoDeExplotacion.md">Instalación </a> <br>
+                    <a href="mostrarCodigo/muestraDBAHFDWESProyectoTema5.php"><img src="doc/images/eye.png" class="logo" alt=""/> </a>  </td>
+                <td class="texto">Librería Validación . </td>
+                <td class="iconos" colspan="2"> <a href="mostrarCodigo/muestraLibreriaValidacion.php"><img src="doc/images/eye.png" class="logo" alt=""/> </a>  </td>
+<!--                        <td class="iconos"> <a href="mostrarcodigo/muestraMiLibreriaStatic.php"><i class="fa-solid fa-eye"></i> </a>  </td>-->
+            </tr>
+
+            <tr>
+
+                <td class="texto">Carga de la base de Datos. </td>
+                <td class="iconos"> <a href="mostrarCodigo/muestraCargaInicialDBAHFDWESProyectoTema5.php"><img src="doc/images/eye.png" class="logo" alt=""/></a>  </td>
+<!--                         <td class="iconos"> <a href="mostrarcodigo/muestraDBVGDWESProyectoTema5.php"><i class="fa-solid fa-eye"></i> </a>  </td>-->
+                <td class="texto">Fichero de configuración PDO. </td>
+                <td class="iconos"> <a href="mostrarCodigo/muestraconfDBPDODes.php"><img src="doc/images/eye.png" class="logo" alt=""/> </a></td>
+                <td class="iconos"> <a href="mostrarCodigo/muestraconfDBPDO.php"><img src="doc/images/eye.png" class="logo" alt=""/> </a></td>
+            </tr>
+            <tr>
+                <td class="texto">Borrado de la base de Datos. </td>
+                <td class="iconos"> <a href="mostrarCodigo/muestraBorraDBAHFDWESProyectoTema5.php"><img src="doc/images/eye.png" class="logo" alt=""/> </a>  </td>
+                <td class="iconos"> <a href=""><img src="doc/images/eye.png" class="logo" alt=""/> </a>  </td>
+                <td class="texto">Librería personal. </td>
+                <td class="iconos" colspan="2"> <a href="mostrarCodigo/muestraLibreriaValidacion.php"><img src="doc/images/eye.png" class="logo" alt=""/> </a>  </td>
+            </tr>
+        </table>
+            <!--
             <thead>
                 <tr>
                     <th rowspan="2">SCRIPTS</th>
@@ -84,6 +122,7 @@
                 </tr>
             </tbody>
         </table>
+            -->
         <table id="ejercicios">
             <thead>
                 <tr>
@@ -111,13 +150,13 @@
                     <td>1</td>
                     <td>Desarrollo de un control de acceso con identificación del usuario basado en la función header()</td>
                     <td>
-                        <a href="" >
-                            <img src="" class="logo" alt=""/>
+                        <a href="mostrarCodigo/muestraEjercicio01.php" >
+                            <img src="doc/images/eye.png" class="logo" alt=""/>
                         </a>
                     </td>
                     <td>
-                        <a href="" >
-                            <img src="" class="logo" alt=""/>
+                        <a href="codigoPHP/ejercicio01.php" >
+                            <img src="doc/images/play.svg" class="logo" alt=""/>
                         </a>
                     </td>
                 </tr>
@@ -126,13 +165,13 @@
                     <td>Desarrollo de un control de acceso con identificación del usuario basado en la función header() y
                         en el uso de una tabla “Usuario” de la base de datos. (PDO)</td>
                     <td>
-                        <a href="" >
-                            <img src="" class="logo" alt=""/>
+                        <a href="mostrarCodigo/muestraEjercicio02.php" >
+                            <img src="doc/images/eye.png" class="logo" alt=""/>
                         </a>
                     </td>
                     <td>
-                        <a href="" >
-                            <img src="" class="logo" alt=""/>
+                        <a href="codigoPHP/ejercicio02.php" >
+                            <img src="doc/images/play.svg" class="logo" alt=""/>
                         </a>
                     </td>
                 </tr>
