@@ -10,7 +10,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
     </head>
     <body>
         <?php
-            highlight_file("../config/confPDOExplotacion.php");
+            highlight_file("../config/confDBPDOExplotacion.php");
         ?>
     </body>
 </html>
