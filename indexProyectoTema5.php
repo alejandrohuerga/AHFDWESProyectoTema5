@@ -42,7 +42,7 @@
 <!--                         <td class="iconos"> <a href="mostrarcodigo/muestraDBVGDWESProyectoTema5.php"><i class="fa-solid fa-eye"></i> </a>  </td>-->
                 <td class="texto" rowspan="2">Fichero de configuración PDO. </td>
                 <td class="iconos" rowspan="2"> <a href="mostrarCodigo/muestraConfPDODesarrollo.php"><img src="doc/images/eye.png" class="logo" alt=""/> </a></td>
-                <td class="iconos" rowspan="2"> <a href="mostrarCodigo/muestraConfPDOExplotación.php"><img src="doc/images/eye.png" class="logo" alt=""/> </a></td>
+                <td class="iconos" rowspan="2"> <a href="mostrarCodigo/muestraConfPDOExplotacion.php"><img src="doc/images/eye.png" class="logo" alt=""/> </a></td>
             </tr>
             <tr>
                 <td class="texto">Borrado de la base de Datos. </td>

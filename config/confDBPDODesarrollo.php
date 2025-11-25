@@ -1,7 +1,7 @@
 <?php
     /*
      * Archivo de configuración con los datos de conexión a la base de datos.
-     * Entorno explotación.
+     * Entorno desarrollo.
     */
 
     define('DNS', 'mysql:host=' . $_SERVER['SERVER_ADDR'] . ';dbname=DBAHFDWESProyectoTema5');

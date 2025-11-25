@@ -8,7 +8,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
         <meta charset="UTF-8">
         <title>EJERCICIO 02</title>
         <style>
-                        *{
+            *{
                 box-sizing: border-box;
                 margin: 0;
             }
@@ -70,34 +70,32 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
     <body>
         <header class="header">
             <h1><a href="../indexProyectoTema5.php">Alejandro De la Huerga</a></h1>
-            <h1>Ejercicio 01</h1>
+            <h1>Ejercicio 02</h1>
         </header>
         <main>
             <section>
                 <?php
                 /**
                  * @author: Alejandro De la Huerga
-                 * @since 23/11/2025
+                 * @since 25/11/2025
                  * 
                  * Ejercicio 2: Desarrollo de un control de acceso con identificación del usuario basado 
                  * en la función header() y en el uso de una tabla “Usuario” de la base de datos. (PDO).
                  */
                 
                 //si no se han enviado las credenciales hay que pedir autenticación
-
-                $usuarioPasswd=$_SERVER['PHP_AUTH_USER'].$_SERVER['PHP_AUTH_PW'];
-
-
+                
+                 $usuarioPasswd=$_SERVER['PHP_AUTH_USER'].$_SERVER['PHP_AUTH_PW'];
                
-                //Importacion del fichero de configuracion
-                require_once '../config/confDBPDOExplotacion.php';
-                if(!isset($_SERVER['PHP_AUTH_USER'])) {
+               if(!isset($_SERVER['PHP_AUTH_USER'])) {
                     header('WWW-Authenticate: Basic Realm="Contenido restringido"');
                     header('HTTP/1.0 401 Unauthorized');
                     echo "Usuario no reconocido!";
                     exit; //el programa acaba aqui
                 }
-                
+                //si se han enviado las credenciales,se comprueban las credenciales, con la base de datos
+                //enlace a los datos de conexión
+                require_once '../config/confDBPDOExplotacion.php';
                 try {
                     $miDB = new PDO(DNS, USUARIODB, PSWD);
                     $miDB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
