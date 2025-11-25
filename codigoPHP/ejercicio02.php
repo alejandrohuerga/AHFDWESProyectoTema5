@@ -84,7 +84,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
                  */
                 
                 //si no se han enviado las credenciales hay que pedir autenticación
+
+                $usuarioPasswd=$_SERVER['PHP_AUTH_USER'].$_SERVER['PHP_AUTH_PW'];
+
                 $usuarioPasswd=$_SERVER['PHP_AUTH_PW'];
+
                
                 //Importacion del fichero de configuracion
                 require_once '../config/confDBPDOExplotacion.php';
