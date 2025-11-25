@@ -87,7 +87,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
 
                 $usuarioPasswd=$_SERVER['PHP_AUTH_USER'].$_SERVER['PHP_AUTH_PW'];
 
-                $usuarioPasswd=$_SERVER['PHP_AUTH_PW'];
 
                
                 //Importacion del fichero de configuracion
