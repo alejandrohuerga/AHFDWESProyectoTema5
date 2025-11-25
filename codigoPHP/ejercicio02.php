@@ -8,7 +8,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
         <meta charset="UTF-8">
         <title>EJERCICIO 02</title>
         <style>
-                        *{
+            *{
                 box-sizing: border-box;
                 margin: 0;
             }
@@ -85,7 +85,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
                 
                 //si no se han enviado las credenciales hay que pedir autenticación
                 
-                $usuarioPasswd=$_SERVER['PHP_AUTH_USER'].$_SERVER['PHP_AUTH_PW'];
+                 $usuarioPasswd=$_SERVER['PHP_AUTH_USER'].$_SERVER['PHP_AUTH_PW'];
                
                if(!isset($_SERVER['PHP_AUTH_USER'])) {
                     header('WWW-Authenticate: Basic Realm="Contenido restringido"');
@@ -95,7 +95,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
                 }
                 //si se han enviado las credenciales,se comprueban las credenciales, con la base de datos
                 //enlace a los datos de conexión
-                require_once '../config/confDBPDODesarrollo.php';
+                require_once '../config/confDBPDOExplotacion.php';
                 try {
                     $miDB = new PDO(DNS, USUARIODB, PSWD);
                     $miDB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

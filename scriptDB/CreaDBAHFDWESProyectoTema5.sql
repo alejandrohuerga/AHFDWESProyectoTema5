@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS T_02Departamento (
 
 
 /* Creación del usuario y permisos */
-CREATE USER IF NOT EXISTS "userAHFDWESProyectoTema5"@"%" IDENTIFIED by "paso";
-GRANT ALL PRIVILEGES on *.* TO "userAHFDWESProyectoTema5"@"%" WITH GRANT OPTION;
+CREATE USER IF NOT EXISTS 'userAHFDWESProyectoTema5'@'%' IDENTIFIED by 'paso';
+GRANT ALL PRIVILEGES on DBAHFDWESProyectoTema5.* TO 'userAHFDWESProyectoTema5'@'%' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 
