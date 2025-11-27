@@ -70,7 +70,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
                  */
                 
                 $aUsuarios = [
-                    "alejandro" => [hash('sha256', 'paso'), "Alejandro De La Huerga"],
+                    "admin" => [hash('sha256', 'paso'), "Admin"],
                     "heraclio" => [hash('sha256', 'paso'), "Héraclio Borbujo"]
                 ];
                 $usuario=$_SERVER['PHP_AUTH_USER'];
