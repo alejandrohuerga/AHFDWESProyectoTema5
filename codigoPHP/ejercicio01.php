@@ -70,6 +70,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
                  */
                 
                 $aUsuarios = [
+                    "admin" => [hash('sha256', 'paso'), "admin"],
                     "alejandro" => [hash('sha256', 'paso'), "Alejandro De La Huerga"],
                     "heraclio" => [hash('sha256', 'paso'), "Héraclio Borbujo"]
                 ];
